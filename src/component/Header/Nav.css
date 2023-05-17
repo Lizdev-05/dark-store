@@ -1,1 +1,53 @@
-rafce
+header {
+  position: relative;
+  width: 100%;
+  background-color: var(--background);
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 1000px;
+  transform: translate(-50%);
+  background-color: var(--foreground);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+ul li {
+  list-style: none;
+
+  font-size: 18px;
+  margin: 0 0.8rem;
+}
+
+.toggle-btn {
+  width: 45px;
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  border-radius: 45px;
+  padding: 5px;
+  transform: scale(1.5);
+  position: relative;
+  cursor: pointer;
+}
+
+.ball {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all 0.2s linear;
+}
