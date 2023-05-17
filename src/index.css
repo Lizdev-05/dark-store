@@ -11,6 +11,20 @@
   --foreground: var(--color-black);
 }
 
+/* DARK COLOR SCHEME */
+[data-theme="dark"] {
+  :root {
+    --font-family: "Poppins", sans-serif;
+
+    --color-white: #fff;
+    --color-dark: #333;
+    --color-orange: #ff7722;
+
+    --background: var(--color-black);
+    --foreground: var(--color-white);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
