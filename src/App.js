@@ -5,8 +5,7 @@ import Hero from "./component/hero/Hero";
 
 function App() {
   return (
-    <div className="App">
-      This is the app page
+    <div className="main">
       <Nav />
       <Hero />
       <Footer />
