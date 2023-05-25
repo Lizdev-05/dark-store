@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 import { FaMoon, FaSun } from "react-icons/fa";
 import "./Nav.css";
 
-const Nav = ({ myTheme, onToggleTheme }) => {
+const Nav = ({ myTheme, onToggleTheme, onSwitch }) => {
   // const action = () => {
   //   console.log("I am a woman")
   // }
@@ -25,7 +25,7 @@ const Nav = ({ myTheme, onToggleTheme }) => {
           <span className="toggle-btn">
             <FaMoon size={16} color="pink" />
             <FaSun size={16} color="yellow" />
-            <div className="ball"></div>
+            <div className={onSwitch ? "ball move" : "ball"}></div>
           </span>
         </div>
       </div>

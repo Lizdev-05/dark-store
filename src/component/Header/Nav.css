@@ -50,3 +50,7 @@ ul li {
   top: 2px;
   transition: all 0.2s linear;
 }
+
+.move {
+  transform: translateX(22px);
+}
