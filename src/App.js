@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="main-app">
       <Nav myTheme={theme} onToggleTheme={toggleTheme} />
-      <Hero />
+      <Hero myTheme={theme} />
       <Footer />
     </div>
   );

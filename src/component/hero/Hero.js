@@ -2,9 +2,9 @@ import React from "react";
 import phone from "../../assets/phone.svg";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({ myTheme }) => {
   return (
-    <section className="hero">
+    <section className="hero" data-theme={myTheme}>
       <div className="container --grid-15">
         <div className="hero-content">
           <h1>Visit Lizdev Landing Page</h1>
