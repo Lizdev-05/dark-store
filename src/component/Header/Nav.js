@@ -3,9 +3,12 @@ import logo from "../../assets/logo.png";
 import { FaMoon, FaSun } from "react-icons/fa";
 import "./Nav.css";
 
-const Nav = () => {
+const Nav = ({ myTheme, onToggleTheme }) => {
+  // const action = () => {
+  //   console.log("I am a woman")
+  // }
   return (
-    <header>
+    <header data-theme={myTheme}>
       <div className="container --flex-between">
         <div className="logo">
           <img src={logo} alt="Nav logo" size={170} />
@@ -18,11 +21,13 @@ const Nav = () => {
             <a href="">About</a>
           </li>
         </ul>
-        <span className="toggle-btn">
-          <FaMoon size={16} color="pink" />
-          <FaSun size={16} color="yellow" />
-          <div className="ball"></div>
-        </span>
+        <div onClick={onToggleTheme}>
+          <span className="toggle-btn">
+            <FaMoon size={16} color="pink" />
+            <FaSun size={16} color="yellow" />
+            <div className="ball"></div>
+          </span>
+        </div>
       </div>
     </header>
   );

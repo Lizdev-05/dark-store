@@ -15,8 +15,7 @@ header::after {
   background-color: var(--foreground);
 }
 
-nav a {
-  text-decoration: none;
+header a {
   color: var(--foreground);
 }
 

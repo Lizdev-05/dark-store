@@ -5,13 +5,15 @@ import Hero from "./component/hero/Hero";
 import useLocalStorage from "use-local-storage";
 
 function App() {
-  const [theme, setTheme] = useLocalStorage("", "light");
+  const [theme, setTheme] = useLocalStorage("theme", "light");
 
-  const newThemee = theme === "light" ? "dark" : "light";
-  setTheme(newThemee);
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
   return (
     <div className="main-app">
-      <Nav />
+      <Nav myTheme={theme} onToggleTheme={toggleTheme} />
       <Hero />
       <Footer />
     </div>
