@@ -4,27 +4,29 @@ import Footer from "./component/Footer/Footer";
 import Nav from "./component/Header/Nav";
 import Hero from "./component/hero/Hero";
 import useLocalStorage from "use-local-storage";
+import ContextApp from "./component/context/ContextApp";
 
 function App() {
-  const [theme, setTheme] = useLocalStorage("theme", "light");
+  // const [theme, setTheme] = useLocalStorage("theme", "light");
 
-  const [switchBtn, setSwitchBtn] = useState(false);
+  // const [switchBtn, setSwitchBtn] = useState(false);
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    setSwitchBtn(!switchBtn);
-  };
+  // const toggleTheme = () => {
+  //   const newTheme = theme === "light" ? "dark" : "light";
+  //   setTheme(newTheme);
+  //   setSwitchBtn(!switchBtn);
+  // };
 
-  useEffect(() => {
-    if (theme === "dark") setSwitchBtn(true);
-  }, []);
+  // useEffect(() => {
+  //   if (theme === "dark") setSwitchBtn(true);
+  // }, []);
 
   return (
     <div className="main-app">
-      <Nav myTheme={theme} onToggleTheme={toggleTheme} onSwitch={switchBtn} />
+      {/* <Nav myTheme={theme} onToggleTheme={toggleTheme} onSwitch={switchBtn} />
       <Hero myTheme={theme} />
-      <Footer myTheme={theme} />
+      <Footer myTheme={theme} /> */}
+      <ContextApp />
     </div>
   );
 }

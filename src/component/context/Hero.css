@@ -1,0 +1,19 @@
+section.hero {
+  background-color: var(--background);
+  padding-top: 12rem;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-content > * {
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.btn-p {
+  background-color: var(--foreground);
+  color: var(--background);
+}
