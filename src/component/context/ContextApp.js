@@ -23,9 +23,9 @@ function ContextApp() {
   return (
     <LightModeContext.Provider value={{ theme, toggleTheme, switchBtn }}>
       <div className="main-app">
-        <Nav myTheme={theme} onToggleTheme={toggleTheme} onSwitch={switchBtn} />
-        <Hero myTheme={theme} />
-        <Footer myTheme={theme} />
+        <Nav />
+        <Hero />
+        <Footer />
       </div>
     </LightModeContext.Provider>
   );
